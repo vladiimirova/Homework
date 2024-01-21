@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
-    <title>Template Page</title>
+    <title>Homework-2</title>
 </head>
 
 <body>
@@ -17,28 +17,46 @@
                         <a href="/" class="menu__item-link">Home</a>
                     </li>
                     <li class="menu__item">
-                        <a href="./pages/page.html" class="menu__item-link">Page</a>
+                        <a href="./pages/gallery.html" class="menu__item-link">Gallery</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+    
     <main>
         <section>
             <div class="container">
                 <!-- Content -->
                 <h1 class="title">Home</h1>
-                <div>
-                    <img src="./images/Placehold.svg" alt="Placehold">
+
+                <div class="comands">
+                    <h2 class="title">Команди для роботи з терміналом</h2>
+
+                    <ul class="tags">
+                        <li class="tags-item">git clone - Клонує репозиторій</li>
+                        <li class="tags-item">git pull - Стягує оновлення з репозиторію</li>
+                        <li class="tags-item">git push - Записує оновлення коду на віддалений репозиторій</li>
+                        <li class="tags-item">git status - показує статус в локальному репозитрії</li>
+                        <li class="tags-item">git add . - гіт починає відслідковувати зміни що внесені в файл</li>
+                        <li class="tags-item">git commit -m “commit text” - зберігає поточний стан файла</li>
+                        <li class="tags-item">git commit -am “text commit” - короткий запис команда git add . та git commit -m “” (Працює лише
+                            для вже відстежуваних файлів)</li>
+                        <li class="tags-item">git log - показує історію комітів</li>
+                        <li class="tags-item">git branch - показує список локальних гілок</li>
+                        <li class="tags-item">git checkout -b name - створює нову гілку з ім’ям “name” і переходить в неї</li>
+                    </ul>
                 </div>
             </div>
         </section>
     </main>
+
     <footer class="footer">
         <div class="container">
             <h2>Footer</h2>
         </div>
     </footer>
+
     <script src="./js/main.js"></script>
 </body>
 
