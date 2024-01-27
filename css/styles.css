@@ -30,9 +30,13 @@ div p {
 #btn1 {
     color: yellowgreen;
     background-color: rgb(80, 176, 255);
+    border: solid 2px rgb(5, 53, 137);
+    border-radius: 3px;
 }
 
 #btn2 {
     color:rgb(141, 7, 7);
     background-color: rgb(255, 126, 126);
+    border: solid 2px rgb(46, 1, 1);
+    border-radius: 3px;
 }
