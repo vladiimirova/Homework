@@ -1,0 +1,42 @@
+.elements {
+    background-color:aliceblue;
+}
+
+h2 {
+    color:rgb(65, 245, 185);
+}
+
+.list-item {
+    color: blueviolet;
+}
+
+.list-item.list-item-red{
+    color: orange;
+}
+
+.google {
+    color: rgb(13, 174, 13);
+    text-decoration: none;
+}
+
+h3 {
+    color: blue;
+}
+
+div p {
+    color: red;
+}
+
+#btn1 {
+    color: yellowgreen;
+    background-color: rgb(80, 176, 255);
+    border: solid 2px rgb(5, 53, 137);
+    border-radius: 3px;
+}
+
+#btn2 {
+    color:rgb(141, 7, 7);
+    background-color: rgb(255, 126, 126);
+    border: solid 2px rgb(46, 1, 1);
+    border-radius: 3px;
+}
