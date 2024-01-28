@@ -12,18 +12,27 @@ img {
 header {
     padding-top: 30px;
     padding-left: 30px;
-    margin-bottom: 40px;
+    padding-bottom: 30px;
+    background-color: #718093;
+}
+
+.menu {
+  list-style-type: none;
 }
 
 .menu__item-link {
     font-size: 20px;
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.products-content{
+    margin-top: 40px;
 }
 
 h1 {
