@@ -9,14 +9,14 @@ img {
     height: auto;
   }
 
-nav {
-    height: 50px;
+header {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 60px;
     background-color: #718093;
 }
 
 .menu {
-    padding: 13px 70px;
-    margin: 0 auto;
     list-style-type: none;
 }
 
@@ -38,12 +38,12 @@ nav {
 h1 {
     text-align: center;
     font-size: 35px;
+    margin-bottom: 25px;
 }
 
 .products {
     text-align: center;
     color: rgb(234, 235, 240);
-    margin-top: 25px;
   }
   
 .product-card {
