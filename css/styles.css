@@ -44,6 +44,7 @@ h1 {
 .products {
     text-align: center;
     color: rgb(234, 235, 240);
+    font-size: 0;
   }
   
 .product-card {
