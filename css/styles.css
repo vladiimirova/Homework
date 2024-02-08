@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #eeeff1;
+  padding-top: 79px;
+}
+
+.menu-item {
+  display: inline-block;
+  margin-right: 42px;
+}
+
+.menu-item-link {
+  text-decoration: none;
+    color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.063%; /* 26.25px */
+  letter-spacing: 1.6px;
+  text-transform: uppercase;  
+}
+
+.menu-item-link.menu-item-link-main {
+  color: #34547A;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 164.063%; /* 26.25px */
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+}
+
