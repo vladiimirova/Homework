@@ -188,3 +188,24 @@ h1 {
 .work-video {
   margin: 0 auto;
 }
+
+.footer {
+  background-color: var(--Accent, #34547A);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.author {
+  color: #FFF;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.rights {
+  color: #FFF;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 164.063%; /* 21.328px */
+}
