@@ -30,8 +30,38 @@
     <main>
         <section>
             <div class="container">
-                <!-- Content -->
+
                 <h1 class="title">Authorization</h1>
+
+                <form action="https://fom.in.ua/echo">
+                    <div class="input-row">
+                        <label>
+                            <span>Email</span>
+                            <input type="email" required name="email" placeholder="Input Email">
+                        </label>
+                    </div>
+                    <div class="input-row">
+                        <label>
+                            <span>Password</span>
+                            <input type="password" required name="password" placeholder="password" minlength="6"
+                                maxlength="8">
+                        </label>
+                    </div>
+                    <div class="input-row">
+                        <label>
+                            <p>Remember password</p>
+                            <span>Yes</span>
+                            <input checked type="radio" name="option" value="yes">
+                        </label>
+                        <label>
+                            <span>No</span>
+                            <input type="radio" name="option" value="no">
+                        </label>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
                 
             </div>
         </section>
