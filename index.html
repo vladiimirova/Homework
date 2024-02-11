@@ -13,23 +13,51 @@
         <div class="container">
             <nav class="nav">
                 <ul class="menu">
-                    <li class="menu__item">
-                        <a href="/" class="menu__item-link">Home</a>
+                    <li class="menu-item">
+                        <a href="/" class="menu-item-link">Registration</a>
                     </li>
-                    <li class="menu__item">
-                        <a href="./pages/page.html" class="menu__item-link">Page</a>
+                    <li class="menu-item">
+                        <a href="./pages/authorization.html" class="menu-item-link">Authorization</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./pages/search.html" class="menu-item-link">Search</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
     <main>
         <section>
             <div class="container">
                 <!-- Content -->
-                <h1 class="title">Home</h1>
+                <h1 class="title">Registration</h1>
                
+                <form action="https://fom.in.ua/echo">
+                    <div class="input-row">
+                        <label>
+                            <span>Email</span>
+                            <input type="email" required name="email" placeholder="Input Email">
+                        </label>
+                    </div>
+                    <div class="input-row">
+                        <label>
+                            <span>Password</span>
+                            <input type="password" required name="password" placeholder="password" minlength="6"
+                                maxlength="8">
+                        </label>
+                    </div>
+                    <div class="input-row">
+                        <label>
+                            <span>Password confirmation</span>
+                            <input type="password" required name="password" placeholder="password" minlength="6"
+                                maxlength="8">
+                        </label>
+                    </div>
+                    <div class="buttons">
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
