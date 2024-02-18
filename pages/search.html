@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Search</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="/" class="menu-item-link">Search</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="../index.html" class="menu-item-link">Registration</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./authorization.html" class="menu-item-link">Authorization</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="form">
+            <div class="container">
+
+                <h1 class="title">Search</h1>
+                
+                <form action="https://fom.in.ua/echo" class="search">
+                    <div class="input-row">
+                        <p class="car">Type Car</p>
+                        <label>
+                            <span>All cars</span>
+                            <input checked type="radio" name="type-car" value="all-cars">
+                        </label>
+                        <label>
+                            <span>Used</span>
+                            <input type="radio" name="type-car" value="used">
+                        </label>
+                        <label>
+                            <span>New</span>
+                            <input type="radio" name="type-car" value="new">
+                        </label>
+                    </div>
+
+                    <div class="input-row">
+                        <p>Car Body</p>
+                        <label>
+                            <input type="checkbox" name="body-type1" value="station-wagon">
+                            <span>Station Wagon</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="body-type2" value="sedan">
+                            <span>Sedan</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="body-type3" value="hatchback">
+                            <span>Hatchback</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="body-type4" value="crossover">
+                            <span>Crossover</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="body-type5" value="coupe">
+                            <span>Coupe</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="body-type6" value="cabriolet">
+                            <span>Сabriolet</span>
+                        </label>
+                    </div>
+
+                    <div class="input-row">
+                        <label for="brand" class="brand">Brand</label>
+                        <select name="brand" id="brand">
+                            <option selected disabled>Select Brand</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Lexus">Lexus</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Mercedes-Banz">Mercedes-Banz</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Skoda">Skoda</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Hyundai">Hyundai</option>
+                        </select>
+                    </div>
+
+                    <div class="input-row">
+                        <label for="country" class="country">Country</label>
+                        <select name="country" id="country">
+                            <option selected disabled>Select Country</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Japan">Japan</option>
+                            <option value="France">France</option>
+                            <option value="Corea">Corea</option>
+                            <option value="Czech">Czech</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="USA">USA</option>
+                            <option value="China">China</option>
+                        </select>
+                    </div>
+
+                    <div class="input-row">
+                        <label>
+                            <span class="price">Price</span>
+                            <input type="number" name="price" placeholder="Input min-price" value="min-price">
+                            <input type="number" name="price" placeholder="Input max-price" value="max-price">
+                            <select name="currency" id="currency">
+                                <option selected disabled>Select Currency</option>
+                                <option value="$">$</option>
+                                <option value="€">€</option>
+                                <option value="₴">₴</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="input-row">
+                        <label>
+                            <span class="year">Year</span>
+                            <select name="year-from" id="year-from">
+                                <option selected disabled>Select Year, from</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                            </select>
+                            
+                            <select name="year-to" id="year-to">
+                                <option selected disabled>Select Year, to</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                            </select>
+                        </label>
+                    </div>
+
+                    <div class="input-row">
+                        <p>State</p>
+                        <label>
+                            <input type="checkbox" name="state-type1" value="bat">
+                            <span>Bat</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="state-type2" value="in-credit">
+                            <span>In Credit</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="state-type3" value="not-cleared">
+                            <span>Not Cleared</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="state-type4" value="not-running">
+                            <span>Not Running/For Spare Parts</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="state-type5" value="repaired">
+                            <span>Repaired</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="state-type6" value="completely-undamaged">
+                            <span>Completely Undamaged</span>
+                        </label>
+                    </div>
+                    
+                    <div class="input-row">
+                        <p>Fuel</p>
+                        <label>
+                            <input type="checkbox" name="fuel-type1" value="gasoline">
+                            <span>Gasoline</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="fuel-type2" value="gas">
+                            <span>Gas</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="fuel-type3" value="propane-butane-gas">
+                            <span>Propane-Butane Gas/Gasoline</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="fuel-type4" value="methane-gas">
+                            <span>Methane Gas/Gasoline</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="fuel-type5" value="hybrid-PHEV">
+                            <span>Hybrid(PHEV)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="fuel-type5" value="hybrid-HEV">
+                            <span>Hybrid(HEV)</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="fuel-type6" value="diesel">
+                            <span>Diesel</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="fuel-type6" value="electro">
+                            <span>Electro</span>
+                        </label>
+                    </div>
+                    
+                    <div class="input-row">
+                        <p>Type Of Gearbox</p>
+                        <label>
+                            <input type="checkbox" name="gearbox-type1" value="manual-mechanical">
+                            <span>Manual/Mechanical</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gearbox-type2" value="automaton">
+                            <span>Automaton</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="sgearbox-type3" value="tiptronic">
+                            <span>Tiptronic</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gearbox-type4" value="robot">
+                            <span>Robot</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gearbox-type5" value="variator">
+                            <span>Variator</span>
+                        </label>
+                    </div>
+
+                    <div class="input-row">
+                        <p>Drive Type</p>
+                        <label>
+                            <input type="checkbox" name="drive-type1" value="full">
+                            <span>Full</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="drive-type2" value="front">
+                            <span>Front</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="drive-type3" value="back">
+                            <span>Back</span>
+                        </label>
+                    </div>
+
+                    <div class="input-row">
+                        <label for="color" class="color">Color</label>
+                        <select name="country" id="country">
+                            <option selected disabled>Select Color</option>
+                            <option value="White">White</option>
+                            <option value="Black">Black</option>
+                            <option value="Brown">Brown</option>
+                            <option value="Yellow">Yellow</option>
+                            <option value="Green">Green</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Red">Red</option>
+                            <option value="Violet">Violet</option>
+                            <option value="Beige">Beige</option>
+                            <option value="Orange">Orange</option>
+                        </select>
+                    </div>
+
+                    <div class="input-row">
+                        <p>Additional Comfort</p>
+                        <label>
+                            <input type="checkbox" name="gearbox-type1" value="leather-salon">
+                            <span>Leather Salon</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gearbox-type2" value="electric seat adjustment">
+                            <span>Electric Seat Adjustment</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="sgearbox-type3" value="seat-ventilation">
+                            <span>Seat Ventilation</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gearbox-type4" value="heated-seats">
+                            <span>Heated Seats</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gearbox-type5" value="seat-position-memory">
+                            <span>Seat Position Memory</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gearbox-type5" value="climate-control">
+                            <span>Climate Control</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="gearbox-type5" value="hatch">
+                            <span>Hatch</span>
+                        </label>
+                        <div class="button">
+                            <button class="btn btn3" type="submit">Search</button>
+                        </div>
+                    </div>
+                </form>
+
+                
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
