@@ -16,9 +16,6 @@
                     <li class="menu-item">
                         <a href="/" class="menu-item-link">Home</a>
                     </li>
-                    <li class="menu-item">
-                        <a href="./pages/page.html" class="menu-item-link">Page</a>
-                    </li>
                 </ul>
             </nav>
         </div>
@@ -26,18 +23,42 @@
     <main>
         <section>
             <div class="container">
-                <!-- Content -->
-                <h1 class="title">Home</h1>
-                <div>
-                    <img src="./images/Placehold.svg" alt="Placehold">
-                </div>
+                <h1 class="title">Table</h1>
+                <table class="worker">
+                    <colgroup>
+                        <col class="bg-blue">
+                        <col class="bg-yellow">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th colspan="8">Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>First cell</td>
+                            <td>Second cell</td>
+                            <td rowspan="3" colspan="6">6 cells merge into one</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">Two cells merge into one</td>
+                        </tr>
+                        <tr>
+                            <td>1st cell 3rd row</td>
+                            <td>1st cell 3rd row</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="8">Do you like tables?</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
         </section>
     </main>
+
     <footer class="footer">
-        <div class="container">
-            <h2>Footer</h2>
-        </div>
     </footer>
     <script src="./js/main.js"></script>
 </body>
