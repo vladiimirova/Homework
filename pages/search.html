@@ -32,8 +32,9 @@
 
                 <h1 class="title">Search</h1>
                 
-                <form action="https://fom.in.ua/echo" class="">
+                <form action="https://fom.in.ua/echo" class="search">
                     <div class="input-row">
+                        <p class="car">Type Car</p>
                         <label>
                             <span>All cars</span>
                             <input checked type="radio" name="type-car" value="all-cars">
@@ -77,7 +78,24 @@
                     </div>
 
                     <div class="input-row">
-                        <label for="country">Country</label>
+                        <label for="brand" class="brand">Brand</label>
+                        <select name="brand" id="brand">
+                            <option selected disabled>Select Brand</option>
+                            <option value="Audi">Audi</option>
+                            <option value="BMW">BMW</option>
+                            <option value="Lexus">Lexus</option>
+                            <option value="Ford">Ford</option>
+                            <option value="Mercedes-Banz">Mercedes-Banz</option>
+                            <option value="Mazda">Mazda</option>
+                            <option value="Skoda">Skoda</option>
+                            <option value="Toyota">Toyota</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Hyundai">Hyundai</option>
+                        </select>
+                    </div>
+
+                    <div class="input-row">
+                        <label for="country" class="country">Country</label>
                         <select name="country" id="country">
                             <option selected disabled>Select Country</option>
                             <option value="Germany">Germany</option>
@@ -95,22 +113,21 @@
 
                     <div class="input-row">
                         <label>
-                            <span>Price</span>
+                            <span class="price">Price</span>
                             <input type="number" name="price" placeholder="Input min-price" value="min-price">
-                            <input type="number" name="price" placeholder="Input max-price"value="max-price">
+                            <input type="number" name="price" placeholder="Input max-price" value="max-price">
                             <select name="currency" id="currency">
                                 <option selected disabled>Select Currency</option>
                                 <option value="$">$</option>
                                 <option value="€">€</option>
                                 <option value="₴">₴</option>
-                               
                             </select>
                         </label>
                     </div>
 
                     <div class="input-row">
                         <label>
-                            <span>Year</span>
+                            <span class="year">Year</span>
                             <select name="year-from" id="year-from">
                                 <option selected disabled>Select Year, from</option>
                                 <option value="2024">2024</option>
@@ -140,7 +157,7 @@
                                 <option value="2000">2000</option>
                             </select>
                             
-                            <select name="year-fto" id="year-to">
+                            <select name="year-to" id="year-to">
                                 <option selected disabled>Select Year, to</option>
                                 <option value="2024">2024</option>
                                 <option value="2023">2023</option>
@@ -276,7 +293,7 @@
                     </div>
 
                     <div class="input-row">
-                        <label for="color">Color</label>
+                        <label for="color" class="color">Color</label>
                         <select name="country" id="country">
                             <option selected disabled>Select Color</option>
                             <option value="White">White</option>
@@ -322,6 +339,9 @@
                             <input type="checkbox" name="gearbox-type5" value="hatch">
                             <span>Hatch</span>
                         </label>
+                        <div class="button">
+                            <button class="btn btn3" type="submit">Search</button>
+                        </div>
                     </div>
                 </form>
 

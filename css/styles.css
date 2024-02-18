@@ -10,6 +10,9 @@ html {
   line-height: normal;
 }
 
+body {
+    padding-bottom: 60px;
+}
 header {
   padding-top: 13px;
   padding-bottom: 13px;
@@ -83,7 +86,7 @@ span {
   margin-right: 5px;
 }
 
-.btn-submit {
+.btn {
   width: 75px;
   height: 30px;
   border-radius: 5px;
@@ -108,10 +111,38 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-.remember {
   margin-bottom: 5px;
 }
 
+.search {
+    margin: 0 auto;
+  background-color: #bdc3c7;
+  width: 1050px;
+  padding: 30px;
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
+}
 
+.brand {
+  margin-right: 24px;
+}
+
+.country {
+  margin-right: 10px;
+}
+
+.price {
+  margin-right: 27px;
+}
+
+.year {
+  margin-right: 31px;
+}
+
+.color {
+    margin-right: 24px;
+}
+
+.btn.btn3 {
+    margin-top: 10px;
+}
