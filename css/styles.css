@@ -62,12 +62,12 @@ thead {
 }
 
 th {
-  border: 1px solid black;
+  border-style:double;
   padding: 5px 10px;
 }
 
 td {
-  border: 1px solid black;
+  border-style: double;
   padding: 5px 10px;
 }
 
