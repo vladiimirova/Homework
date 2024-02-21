@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 60px;
+    background-color: #2C3A47;
+    box-shadow: 1px 4px 10px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  .menu {
+    display: flex;
+    column-gap: 10px;
+    /* margin-left: auto; */
+  }
+  .menu a {
+    transition: 0.2s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+  
+  .menu-item {
+    position: relative;
+  }
+
+  .menu-item-link {
+    padding: 10px 20px;
+    background-color: rgb(0 0 0 / 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    display: block;
+    border-radius: 6px;
+  }
+
+  .menu-item-link:hover,
+.menu-item-link:focus {
+  background-color: rgb(0 0 0 / 42%);
+}
+
+.menu-item:hover > .sub-menu,
+.menu-item-link:focus + .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+    width: max-content;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #2C3A47;
+    margin-top: 1px;
+    display: none;
+  }
+  .sub-menu-item-link {
+    padding: 10px 20px;
+    background-color: rgb(0 0 0 / 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    display: block;
+  }
+  
+  .sub-menu-item-link:hover {
+    background-color: rgb(0 0 0 / 60%);
+  }
+
+  .sub-menu2 {
+    width: max-content;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #2C3A47;
+    margin-top: 1px;
+    display: none;
+  }
+  .sub-menu2-item-link {
+    padding: 10px 20px;
+    background-color: rgb(0 0 0 / 20%);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    display: block;
+  }
+  
+  .sub-menu2-item-link:hover {
+    background-color: rgb(0 0 0 / 60%);
+  }
+  
+
+  .sub-menu-item2:hover > .sub-menu2,
+.sub-menu-item2:focus + .sub-menu2 {
+  display: block;
+}
+
+  
+  body {
+    padding-bottom: 60px;
+  }
+  
+  .container {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .main-content {
+    padding-top: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 25px;
+  }
