@@ -21,31 +21,30 @@
         </div>
     </header>
     <main>
-        <section>
+        <section class="main-content">
             <div class="container">
                 <h1 class="title">Table</h1>
-                <table class="worker">
+                <table class="first-table">
                     <colgroup>
-                        <col class="bg-blue">
-                        <col class="bg-yellow">
+                        <col span="3" class="bg-yellow">
                     </colgroup>
                     <thead>
                         <tr>
-                            <th colspan="8">Name</th>
+                            <th colspan="8" class="bg-blue">My first table</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>First cell</td>
-                            <td>Second cell</td>
+                            <td class="bg-blue">First cell</td>
+                            <td class="bg-blue">Second cell</td>
                             <td rowspan="3" colspan="6">6 cells merge into one</td>
                         </tr>
                         <tr>
                             <td colspan="2">Two cells merge into one</td>
                         </tr>
                         <tr>
-                            <td>1st cell 3rd row</td>
-                            <td>1st cell 3rd row</td>
+                            <td>1st cell <br> 3rd row</td>
+                            <td>1st cell <br> 3rd row</td>
                         </tr>
                     </tbody>
                     <tfoot>
