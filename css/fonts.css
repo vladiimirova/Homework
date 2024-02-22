@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'GraphikLCG';
+  font-weight: 600;
+  src: url(../fonts/GraphikLGG/GraphikLCG-Semibold.woff2) format('woff2');
+}
+
+@font-face {
+  font-family:'GraphikLCG';
+  font-weight: 400;
+  src: url(../fonts/GraphikLGG/GraphikLCG-Regular.woff2) format('woff2');
+}
+
