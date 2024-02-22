@@ -101,12 +101,12 @@ ul li:has(ul) > a::after {
   left: 100%;
   top: 0;
   background-color: #009eff;
-  margin-top: 1px;
   display: none;
   border: 1px solid #0083ef;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+
 .sub-menu2-item-link {
   padding: 10px 15px;
   background-color: #009eff;
