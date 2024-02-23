@@ -8,7 +8,27 @@ html {
     font-family: 'GraphikLCG';
     font-size: 20px;
 }
-  
+
+p {
+    color: #000;
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+    font-weight: 600;
+}
+
 .container {
     max-width: 1330px;
     margin-left: auto;
