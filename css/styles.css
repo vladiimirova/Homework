@@ -95,7 +95,7 @@ a {
 
 .header-btn1 {
     margin-right: 10px;
-    border-color: #00000080;
+    border: 1px solid rgba(0, 0, 0, 0.50);
     background-color: #FFF;;
     color: #000;
     text-align: center;
@@ -115,4 +115,86 @@ a {
     font-weight: 600;
     line-height: 45px; /* 281.25% */
 }
+
+.main-page {
+    padding-top: 129px;
+    padding-bottom: 172px;
+}
+
+.main-content {
+    margin-left: 20px;
+    margin-right: 12px;
+    display: flex;
+    position: relative;
+}
+
+.left-information {
+
+}
+
+h1 {
+    font-size: 65px;
+    font-style: normal;
+    line-height: 70px; /* 107.692% */
+    width: 552px;
+    margin-bottom: 51px;
+}
+
+.left-text {
+    font-size: 25px;
+    font-style: normal;
+    line-height: 35px; /* 140% */
+    width: 471px;
+    margin-bottom: 50px;
+}
+
+.left-btn {
+    display: flex;
+}
+
+.main-btn {
+    width: 160px;
+    height: 60px;
+    margin-bottom: 25px;
+}
+
+.main-btn1 {
+    background: #FF6336;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 375% */
+    border: none;
+    margin-right: 10px;
+}
+.main-btn2 {
+    border: 1px solid rgba(0, 0, 0, 0.50);
+    background-color: #FFF;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 375% */
+
+}
+.descr-btn {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 25px; /* 166.667% */
+
+}
+.main-img {
+    width: 759px;
+    height: 529px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
   
+
