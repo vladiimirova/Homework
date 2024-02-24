@@ -1,22 +1,37 @@
+:root {
+  --maxWidth: 1330px;
+  --primaryFont: "GraphikLCG";
+  --primaryTextColor: #000;
+  --primaryTextSize: 20px;
+
+  /* Color */
+  --orange: #ff6336;
+  --salmon: #ff9c7d;
+  --milk: #fff8e4;
+  --light-blue: #c9e8f2;
+  --beige: #dabc98;
+  --white: #fff;
+}
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-family: 'GraphikLCG';
-    font-size: 20px;
+  font-family: var(--primaryFont);
+  font-size: var(--primaryTextSize);
+  color: var(--primaryTextColor);
 }
 
 p {
-    color: #000;
-    font-weight: 400;
+  font-weight: 400;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -25,176 +40,210 @@ h3,
 h4,
 h5,
 h6 {
-    color: #000;
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .container {
-    max-width: 1330px;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: var(--maxWidth);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header .container{
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .header {
-    background-color: #FFF;
-    border-bottom: 1px solid #cccccc;
+  background-color: var(--white);
+  border-bottom: 1px solid #cccccc;
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .left-side {
-    display: flex;
+  display: flex;
 }
 
 .logo {
-    margin-top: 34px;
-    margin-bottom: 33px;
+  margin-top: 34px;
+  margin-bottom: 33px;
 }
 
 .menu {
-    display: flex;
-    column-gap: 57px;
-    margin: 39px 0 36px 51px;
+  display: flex;
+  column-gap: 57px;
+  margin: 39px 0 36px 51px;
 }
 
 .menu-item-link {
-    color: #000;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px; /* 133.333% */
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 133.333% */
 }
 
 .header-menu {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .right-side {
-    display: flex;
-    margin-top: 26px;
-    margin-bottom: 24px;
+  display: flex;
+  margin-top: 26px;
+  margin-bottom: 24px;
 }
 
 .header-btn {
-    width: 120px;
-    height: 45px;
+  width: 120px;
+  height: 45px;
 }
 
 .header-btn1 {
-    margin-right: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.50);
-    background-color: #FFF;;
-    color: #000;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 45px; /* 281.25% */
+  margin-right: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: var(--white);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 45px; /* 281.25% */
 }
 
 .header-btn2 {
-    background-color: #FF6336;
-    border: none;
-    color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 45px; /* 281.25% */
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 45px; /* 281.25% */
 }
 
 .main-page {
-    padding-top: 129px;
-    padding-bottom: 172px;
+  padding-top: 129px;
+  padding-bottom: 172px;
 }
 
-.main-content {
-    margin-left: 20px;
-    margin-right: 12px;
-    display: flex;
-    position: relative;
-}
-
-.left-information {
-
+.content-box {
+  display: flex;
+  position: relative;
 }
 
 h1 {
-    font-size: 65px;
-    font-style: normal;
-    line-height: 70px; /* 107.692% */
-    width: 552px;
-    margin-bottom: 51px;
+  font-size: 65px;
+  font-style: normal;
+  line-height: 70px; /* 107.692% */
+  width: 552px;
+  margin-bottom: 51px;
 }
 
 .left-text {
-    font-size: 25px;
-    font-style: normal;
-    line-height: 35px; /* 140% */
-    width: 471px;
-    margin-bottom: 50px;
+  font-size: 25px;
+  font-style: normal;
+  line-height: 35px; /* 140% */
+  width: 471px;
+  margin-bottom: 50px;
 }
 
-.left-btn {
-    display: flex;
+.btn-box {
+  display: flex;
 }
 
 .main-btn {
-    width: 160px;
-    height: 60px;
-    margin-bottom: 25px;
+  width: 160px;
+  height: 60px;
+  margin-bottom: 25px;
 }
 
 .main-btn1 {
-    background: #FF6336;
-    color: #FFF;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 60px; /* 375% */
-    border: none;
-    margin-right: 10px;
+  background: var(--orange);
+  color: var(--white);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 375% */
+  border: none;
+  margin-right: 10px;
 }
+
 .main-btn2 {
-    border: 1px solid rgba(0, 0, 0, 0.50);
-    background-color: #FFF;
-    color: #000;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 60px; /* 375% */
-
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: var(--white);
+  color: var(--black);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 375% */
 }
+
 .descr-btn {
-    color: #000;
-    font-size: 15px;
-    font-style: normal;
-    line-height: 25px; /* 166.667% */
-
+  color: var(--black);
+  font-size: 15px;
+  font-style: normal;
+  line-height: 25px; /* 166.667% */
 }
+
 .main-img {
-    width: 759px;
-    height: 529px;
-    margin-top: 22px;
-    margin-bottom: 10px;
-    position: absolute;
-    right: 0;
-    top: 0;
+  width: 759px;
+  height: 529px;
+  margin-top: 22px;
+  margin-bottom: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-  
 
+.companies-section {
+  background: var(--salmon);
+  padding-top: 108px;
+  padding-bottom: 104px;
+}
+
+.wrapper-companies {
+}
+
+h2 {
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    line-height: 60px; /* 120% */
+    width: 720px;
+    margin: 0 auto;
+    margin-bottom: 82px;
+}
+.companies-icons {
+    display: flex;
+    column-gap: 104px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.company1 {
+}
+.company2 {
+}
+.company3 {
+}
+.company4 {
+}
+.company5 {
+}
+.company6 {
+}
