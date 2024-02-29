@@ -97,6 +97,10 @@ a {
   line-height: 20px; /* 133.333% */
 }
 
+.menu-item-link:hover {
+    color: var(--orange);
+}
+
 .header-menu {
   justify-content: space-between;
 }
@@ -123,6 +127,11 @@ a {
   line-height: 45px; /* 281.25% */
 }
 
+.header-btn1:hover {
+    background-color: var(--salmon);
+    transform: translateY(-2px);
+}
+
 .header-btn2 {
   background-color: var(--orange);
   border: none;
@@ -132,6 +141,11 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 45px; /* 281.25% */
+}
+
+.header-btn2:hover {
+    background-color: var(--salmon);
+    transform: translateY(-2px);
 }
 
 .main-page {
@@ -168,6 +182,11 @@ h1 {
   width: 160px;
   height: 60px;
   margin-bottom: 25px;
+}
+
+.main-btn:hover {
+    background-color: var(--salmon);
+    transform: translateY(-2px);
 }
 
 .main-btn1 {
@@ -1018,4 +1037,36 @@ height: 577px;
 
 .fourth-col {  
     width: 187px;
+}
+
+.footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left {
+    display: flex;
+    column-gap: 14px;
+    padding-top: 5px;
+}
+.footer-logo {
+}
+
+.footer-descr {
+    width: 301px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; /* 125% */
+}
+.footer-right {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px; /* 125% */
 }
