@@ -91,10 +91,12 @@ a {
 }
 
 .menu-item-link {
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 133.333% */
+    color: var(--primaryTextColor);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 133.333% */
+    transition: 0.2s linear all;
 }
 
 .menu-item-link:hover {
@@ -125,6 +127,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 45px; /* 281.25% */
+  transition: 0.2s linear all;
 }
 
 .header-btn1:hover {
@@ -141,6 +144,7 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 45px; /* 281.25% */
+  transition: 0.2s linear all;
 }
 
 .header-btn2:hover {
@@ -182,6 +186,7 @@ h1 {
   width: 160px;
   height: 60px;
   margin-bottom: 25px;
+  transition: 0.2s linear all;
 }
 
 .main-btn:hover {
@@ -246,6 +251,7 @@ h1 {
 }
 .companies-icons {
     display: flex;
+    align-items: center;
     column-gap: 104px;
     margin-right: 20px;
     margin-left: 20px;
@@ -267,6 +273,7 @@ h1 {
 .link-prosses {
     color: var(--primaryTextColor);
     text-decoration: underline;
+    transition: 0.2s linear all;
 }
 
 .link-prosses:hover {
@@ -286,10 +293,10 @@ h1 {
 .control-inform h2 {
     width: 493px;
     margin-bottom: 30px;
-font-size: 50px;
-font-style: normal;
-font-weight: 600;
-line-height: 60px; /* 120% */
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px; /* 120% */
 }
 
 .control-text {
@@ -303,6 +310,7 @@ line-height: 60px; /* 120% */
     font-style: normal;
     font-weight: 600;
     line-height: 30px; /* 150% */
+    transition: 0.2s linear all;
 }
 
 .start:hover {
@@ -499,6 +507,7 @@ height: 577px;
     font-weight: 400;
     line-height: 25px;
     text-decoration-line: underline;
+    transition: 0.2s linear all;
 }
 
 .app-descr2 a:hover {
@@ -672,6 +681,7 @@ height: 577px;
     font-weight: 400;
     line-height: 30px; /* 150% */
     text-decoration-line: underline;
+    transition: 0.2s linear all;
 }
 
 .learn:hover {
@@ -710,6 +720,7 @@ height: 577px;
     line-height: 30px;
     margin-bottom: 26px;
     text-decoration-line: underline;
+    transition: 0.2s linear all;
 }
 
 .boost-descr2 a:hover {
@@ -893,6 +904,7 @@ height: 577px;
     font-style: normal;
     font-weight: 600;
     line-height: 60px; /* 375% */
+    transition: 0.2s linear all;
 }
 
 .see-btn:hover {
@@ -936,6 +948,7 @@ height: 577px;
     font-style: normal;
     font-weight: 600;
     line-height: 60px; /* 352.941% */
+    transition: 0.2s linear all;
 }
 
 .try-btn:hover {
@@ -988,6 +1001,7 @@ height: 577px;
     font-style: normal;
     font-weight: 600;
     line-height: 30px; /* 150% */
+    transition: 0.2s linear all;
 }
 
 .case-link a:hover {
@@ -1013,6 +1027,7 @@ height: 577px;
     font-style: normal;
     font-weight: 400;
     line-height: 15px; /* 100% */
+    transition: 0.2s linear all;
 }
 
 .list a:hover {
@@ -1053,8 +1068,6 @@ height: 577px;
     display: flex;
     column-gap: 14px;
     padding-top: 5px;
-}
-.footer-logo {
 }
 
 .footer-descr {
