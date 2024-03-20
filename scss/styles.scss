@@ -11,6 +11,19 @@ $light-blue: #c9e8f2;
 $beige: #dabc98;
 $white: #fff;
 
+// Точки перериву
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-family: $primaryFont;
   font-size: $primaryTextSize;
@@ -48,6 +61,26 @@ a {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $breakpoint-sm) {
+    max-width: 540px;
+  }
+
+  @media (min-width: $breakpoint-md) {
+    max-width: 720px;
+  }
+
+  @media (min-width: $breakpoint-lg) {
+    max-width: 960px;
+  }
+
+  @media (min-width: $breakpoint-xl) {
+    max-width: 1140px;
+  }
+
+  @media (min-width: $breakpoint-xxl) {
+    max-width: 1330px;
+  }
 }
 
 /* header */
@@ -60,7 +93,6 @@ a {
   background-color: $white;
   border-bottom: 1px solid #cccccc;
 }
-
 
 .logo {
   margin-top: 34px;
@@ -84,7 +116,7 @@ button.button-menu {
     width: 40px;
   }
 
-  @media screen and (min-width: 993px) {
+  @media screen and (min-width: 992.9px) {
     display: none !important;
   }
 }
@@ -96,43 +128,37 @@ button.button-menu {
 }
 
 .nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; /* Установка ширины на 100% */
-    gap: 25px;
-    font-size: 0;
-    overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Установка ширины на 100% */
+  gap: 25px;
+  font-size: 0;
+  overflow: hidden;
 
-    @media screen and (max-width: 1200px) {
-        gap: 15px;
-      }
-
-    @media screen and (max-width: 992px) {
-      gap: 40px;
-    }
+  @media screen and (max-width: $breakpoint-lg) {
+    gap: 40px;
   }
-  
+
+  @media screen and (min-width: 992.9px) {
+    gap: 15px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    gap: 25px;
+  }
+}
 
 .mobile-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 338px;
 
-  @media screen and (max-width: 1346px) {
-    gap: 200px;
-  }
-
-  @media screen and (max-width: 1208px) {
-    gap: 100px;
-  }
-
-  @media screen and (max-width: 1089px) {
-    gap: 70px;
-  }
-
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: $breakpoint-lg) {
     flex-direction: column;
     position: fixed;
     left: 0;
@@ -144,6 +170,18 @@ button.button-menu {
 
     transform: translateX(-100%);
     display: none;
+  }
+
+  @media screen and (min-width: 992.9px) {
+    gap: 70px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    gap: 200px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    gap: 338px;
   }
 }
 
@@ -163,12 +201,16 @@ button.button-menu {
   margin: 39px 0 36px;
   padding: 0;
 
-  @media screen and (max-width: 1200px) {
-    column-gap: 40px;
+  @media screen and (min-width: 992.9px) {
+    gap: 35px;
   }
 
-  @media screen and (min-width: 993px) {
-    display: flex;
+  @media screen and (min-width: $breakpoint-xl) {
+    gap: 40px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    gap: 57px;
   }
 }
 
@@ -189,10 +231,6 @@ button.button-menu {
   display: flex;
   margin-top: 26px;
   margin-bottom: 24px;
-
-  @media screen and (min-width: 993px) {
-    display: flex;
-  }
 }
 
 .header-btn {
@@ -234,3 +272,313 @@ button.button-menu {
   transform: translateY(-2px);
 }
 
+/* Main page */
+.main-page {
+  padding-top: 129px;
+  padding-bottom: 172px;
+}
+
+.content-box {
+  display: flex;
+  position: relative;
+
+  @media screen and (max-width: $breakpoint-lg) {
+    display: block;
+  }
+}
+
+h1 {
+  font-style: normal;
+  line-height: 70px; /* 107.692% */
+  margin-bottom: 51px;
+
+  @media screen and (max-width: 575.9px) {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 35px;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 45px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 50px;
+    width: 500px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    text-align: start;
+    font-size: 58px;
+    width: 500px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    font-size: 60px;
+    width: 525px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    font-size: 65px;
+    width: 552px;
+  }
+}
+
+.left-text {
+  font-style: normal;
+  line-height: 35px; /* 140% */
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 575.9px) {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    width: 410px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 18px;
+    width: 420px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    margin: 0;
+    text-align: start;
+    font-size: 20px;
+    width: 425px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    font-size: 22px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    font-size: 25px;
+    width: 471px;
+  }
+}
+
+.btn-box {
+  @media screen and (max-width: 575.9px) {
+    display: block;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    display: flex;  
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    justify-content: start;
+  }
+}
+
+.main-btn {
+  width: 160px;
+  height: 60px;
+  margin-bottom: 25px;
+  transition: 0.2s linear all;
+  font-size: 16px;
+
+  @media screen and (max-width: 575.9px) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.main-btn:hover {
+  background-color: $salmon;
+  transform: translateY(-2px);
+}
+
+.main-btn1 {
+  background: $orange;
+  color: $white;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 375% */
+  border: none;
+
+  @media screen and (max-width: 575.9px) {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    margin-right: 10px;
+  }
+
+}
+
+.main-btn2 {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  background-color: $white;
+  color: black;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 375% */
+}
+
+.descr-btn {
+  color: black;
+  font-style: normal;
+  line-height: 25px; /* 166.667% */
+
+  @media screen and (max-width: 575.9px) {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 10px;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 11px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    text-align: start;
+    margin: 0;
+    font-size: 13px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) { 
+    font-size: 15px;
+  }
+}
+
+.main-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  @media screen and (max-width: 575.9px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    display: none;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    display: flex;
+    width: 480px;
+    margin-top: 90px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    width: 650px;
+    margin-top: 50px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) { 
+    width: 759px;
+    height: 529px;
+  margin-top: 22px;
+  margin-bottom: 10px;
+  }
+}
+
+/* Companies page */
+.companies-section {
+  background: $salmon;
+  padding-top: 108px;
+  padding-bottom: 104px;
+}
+
+.wrapper-companies h2 {
+    text-align: center;
+    font-style: normal;
+    line-height: 60px; /* 120% */
+    margin: 0 auto;
+
+    @media screen and (max-width: 575.9px) {
+      font-size: 38px;
+      margin-bottom: 50px;
+    }
+  
+    @media screen and (min-width: $breakpoint-sm) {
+      font-size: 40px;
+      width: 540px;
+      margin-bottom: 50px;
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+      font-size: 42px;
+      width: 600px;
+    }
+  
+    @media screen and (min-width: $breakpoint-lg) {
+      font-size: 45px;
+      width: 650px;
+    margin-bottom: 82px;
+    }
+  
+    @media screen and (min-width: $breakpoint-xl) {
+      font-size: 48px;
+      width: 700px;
+    }
+  
+    @media screen and (min-width: $breakpoint-xxl) { 
+      font-size: 50px;
+       width: 720px;
+    }
+}
+
+.companies-icons {
+    column-gap: 104px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+    @media screen and (max-width: 575.9px) {
+      display: block;
+      text-align: center;
+    }
+  
+    @media screen and (min-width: $breakpoint-sm) {
+      display: block; 
+      text-align: center;
+    }
+
+    @media screen and (min-width: $breakpoint-lg) {
+      display: flex;
+    align-items: center;
+    }
+}
+
+.company:not(:last-child) {
+  @media screen and (max-width: 575.9px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+      margin: 0;
+  }
+}
