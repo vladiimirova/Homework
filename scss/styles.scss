@@ -18,7 +18,7 @@ $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1400px;
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -374,7 +374,7 @@ h1 {
   }
 
   @media screen and (min-width: $breakpoint-sm) {
-    display: flex;  
+    display: flex;
     justify-content: center;
   }
 
@@ -420,7 +420,6 @@ h1 {
   @media screen and (min-width: $breakpoint-sm) {
     margin-right: 10px;
   }
-
 }
 
 .main-btn2 {
@@ -464,7 +463,7 @@ h1 {
     font-size: 14px;
   }
 
-  @media screen and (min-width: $breakpoint-xxl) { 
+  @media screen and (min-width: $breakpoint-xxl) {
     font-size: 15px;
   }
 }
@@ -493,11 +492,11 @@ h1 {
     margin-top: 50px;
   }
 
-  @media screen and (min-width: $breakpoint-xxl) { 
+  @media screen and (min-width: $breakpoint-xxl) {
     width: 759px;
     height: 529px;
-  margin-top: 22px;
-  margin-bottom: 10px;
+    margin-top: 22px;
+    margin-bottom: 10px;
   }
 }
 
@@ -509,63 +508,63 @@ h1 {
 }
 
 .wrapper-companies h2 {
-    text-align: center;
-    font-style: normal;
-    line-height: 60px; /* 120% */
-    margin: 0 auto;
+  text-align: center;
+  font-style: normal;
+  line-height: 60px; /* 120% */
+  margin: 0 auto;
 
-    @media screen and (max-width: 575.9px) {
-      font-size: 38px;
-      margin-bottom: 50px;
-    }
-  
-    @media screen and (min-width: $breakpoint-sm) {
-      font-size: 40px;
-      width: 540px;
-      margin-bottom: 50px;
-    }
+  @media screen and (max-width: 575.9px) {
+    font-size: 38px;
+    margin-bottom: 50px;
+  }
 
-    @media screen and (min-width: $breakpoint-md) {
-      font-size: 42px;
-      width: 600px;
-    }
-  
-    @media screen and (min-width: $breakpoint-lg) {
-      font-size: 45px;
-      width: 650px;
+  @media screen and (min-width: $breakpoint-sm) {
+    font-size: 40px;
+    width: 540px;
+    margin-bottom: 50px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 42px;
+    width: 600px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: 45px;
+    width: 650px;
     margin-bottom: 82px;
-    }
-  
-    @media screen and (min-width: $breakpoint-xl) {
-      font-size: 48px;
-      width: 700px;
-    }
-  
-    @media screen and (min-width: $breakpoint-xxl) { 
-      font-size: 50px;
-       width: 720px;
-    }
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    font-size: 48px;
+    width: 700px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    font-size: 50px;
+    width: 720px;
+  }
 }
 
 .companies-icons {
-    column-gap: 104px;
-    margin-right: 20px;
-    margin-left: 20px;
+  column-gap: 104px;
+  margin-right: 20px;
+  margin-left: 20px;
 
-    @media screen and (max-width: 575.9px) {
-      display: block;
-      text-align: center;
-    }
-  
-    @media screen and (min-width: $breakpoint-sm) {
-      display: block; 
-      text-align: center;
-    }
+  @media screen and (max-width: 575.9px) {
+    display: block;
+    text-align: center;
+  }
 
-    @media screen and (min-width: $breakpoint-lg) {
-      display: flex;
+  @media screen and (min-width: $breakpoint-sm) {
+    display: block;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    display: flex;
     align-items: center;
-    }
+  }
 }
 
 .company:not(:last-child) {
@@ -574,11 +573,344 @@ h1 {
   }
 
   @media screen and (min-width: $breakpoint-sm) {
-
     margin-bottom: 40px;
   }
 
   @media screen and (min-width: $breakpoint-lg) {
-      margin: 0;
+    margin: 0;
   }
 }
+
+/* Process page */
+.process {
+  border-color: $white;
+  padding-top: 90px;
+  padding-bottom: 150px;
+}
+
+.process-subtitle {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 120% */
+
+  &:not(.process-subtitle-work) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 575.9px) {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 38px;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 42px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: 45px;
+    margin: 0;
+    text-align: start;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    font-size: 50px;
+  }
+
+  &-control {
+    @media screen and (min-width: $breakpoint-xxl) {
+      width: 493px;
+    }
+  }
+
+  &-time {
+    @media screen and (min-width: $breakpoint-xxl) {
+      width: 379px;
+    }
+  }
+
+  &-quality {
+    @media screen and (min-width: $breakpoint-xxl) {
+      width: 397px;
+    }
+  }
+
+  &-work {
+    margin-bottom: 33px;
+
+    @media screen and (min-width: $breakpoint-xxl) {
+      width: 348px;
+    }
+  }
+}
+
+.link-process {
+  color: $primaryTextColor;
+  text-decoration: underline;
+  transition: 0.2s linear all;
+}
+
+.link-process:hover {
+  color: $orange;
+}
+
+.flex {
+  display: flex;
+
+  @media screen and (max-width: 991.9px) {
+    &:nth-child(odd) {
+      flex-direction: column;
+    }
+    &:nth-child(even) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @media screen and (max-width: 991.9px) {
+    &:not(:last-child) {
+      margin-bottom: 90px;
+    }
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    &:not(:last-child) {
+      margin-bottom: 250px;
+    }
+
+    column-gap: 70px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    column-gap: 90px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    &:not(:first-child) {
+      column-gap: 138px;
+    }
+  }
+
+  &-wrapper-control {
+    @media screen and (min-width: $breakpoint-xxl) {
+      column-gap: 165px;
+    }
+  }
+}
+
+.inform {
+  @media screen and (max-width: 991.9px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    margin-top: 70px;
+  }
+
+  &-control {
+    @media screen and (min-width: $breakpoint-xxl) {
+      margin-top: 151px;
+    }
+  }
+
+  &-time {
+    @media screen and (min-width: $breakpoint-xxl) {
+      margin-top: 151px;
+    }
+  }
+
+  &-quality {
+    @media screen and (min-width: $breakpoint-xxl) {
+      margin-top: 161px;
+    }
+  }
+
+  &-work {
+    @media screen and (min-width: $breakpoint-xxl) {
+      margin-top: 123px;
+    }
+  }
+}
+
+.start {
+  @media screen and (max-width: 575.9px) {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    margin: 0;
+    text-align: start;
+  }
+}
+
+.start a {
+  color: $primaryTextColor;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 150% */
+  transition: 0.2s linear all;
+}
+
+.start a:hover {
+  color: $orange;
+}
+
+.gif-box {
+  @media screen and (max-width: 575.9px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    text-align: center;
+  }
+}
+
+.gif {
+  @media screen and (min-width: $breakpoint-xxl) {
+    width: 632px;
+  }
+}
+
+.text {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+
+  @media screen and (max-width: 575.9px) {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: 18px;
+    margin: 0;
+    text-align: start;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    font-size: 19px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    font-size: 20px;
+  }
+
+  &-control {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+      width: 470px;
+    }
+
+    @media screen and (min-width: $breakpoint-xxl) {
+      width: 491px;
+    }
+  }
+
+  &-time {
+    margin-bottom: 36px;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      width: 400px;
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+      width: 420px;
+    }
+
+    @media screen and (min-width: $breakpoint-xxl) {
+      width: 450px;
+    }
+  }
+
+  &-quality {
+    margin-bottom: 35px;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      width: 480px;
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+      width: 500px;
+    }
+
+    @media screen and (min-width: $breakpoint-xxl) {
+      width: 520px;
+    }
+  }
+
+  &-work {
+    margin-bottom: 27px;
+
+    @media screen and (min-width: $breakpoint-lg) {
+      width: 480px;
+    }
+
+    @media screen and (min-width: $breakpoint-xl) {
+      width: 500px;
+    }
+
+    @media screen and (min-width: $breakpoint-xxl) {
+      width: 520px;
+    }
+  }
+}
+
+/* @media screen and (max-width: 575.9px) {
+
+    }
+  
+    @media screen and (min-width: $breakpoint-sm) {
+
+    }
+
+    @media screen and (min-width: $breakpoint-md) {
+
+    }
+  
+    @media screen and (min-width: $breakpoint-lg) {
+
+    }
+  
+    @media screen and (min-width: $breakpoint-xl) {
+
+    }
+  
+    @media screen and (min-width: $breakpoint-xxl) { 
+
+    } */
