@@ -1850,8 +1850,8 @@ h1 {
   display: flex;
 
   @media screen and (max-width: 575.9px) {
-    justify-content: center;  
-    text-align: center;  
+    justify-content: center;
+    text-align: center;
     margin-top: 20px;
     column-gap: 50px;
   }
@@ -1911,6 +1911,111 @@ h1 {
 
 .rating-second {
   margin-top: 30px;
+}
+
+/* Tools page */
+.tools {
+  border-color: $white;
+  padding-top: 169px;
+  padding-bottom: 162px;
+  text-align: center;
+}
+
+.tools h2 {
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 75px; /* 115.385% */
+
+  @media screen and (max-width: 575.9px) {
+    font-size: 56px;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    width: 510px;
+    font-size: 58px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    width: 650px;
+    font-size: 60px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 700px;
+    font-size: 60px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    width: 750px;
+    font-size: 62px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    width: 791px;
+    font-size: 65px;
+  }
+}
+
+.tools p {
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 120% */
+  margin-bottom: 25px;
+
+  @media screen and (max-width: 575.9px) {
+    max-width: 450px;
+    font-size: 20px;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    width: 450px;
+    font-size: 21px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    width: 480px;
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 500px;
+    font-size: 23px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    width: 520px;
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) { 
+    width: 539px;
+    font-size: 25px;
+  }
+}
+
+.tools-img {
+  margin-bottom: 32px;
+}
+
+.see-btn {
+  width: 193px;
+  height: 60px;
+  background-color: $orange;
+  border: none;
+  color: $white;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 375% */
+  transition: 0.2s linear all;
+}
+
+.see-btn:hover {
+  background-color: $salmon;
+  transform: translateY(-2px);
 }
 
 /* @media screen and (max-width: 575.9px) {
