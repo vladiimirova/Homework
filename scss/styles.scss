@@ -2472,26 +2472,68 @@ h1 {
   }
 }
 
-/* @media screen and (max-width: 575.9px) {
+/* Footer */
+.footer {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
 
-    }
-  
-    @media screen and (min-width: $breakpoint-sm) {
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  @media screen and (max-width: 575.9px) {
+    column-gap: 40px;
+  }
 
-    }
+  @media screen and (min-width: $breakpoint-sm) {
+    column-gap: 40px;
+  }
 
-    @media screen and (min-width: $breakpoint-md) {
+  @media screen and (min-width: $breakpoint-md) {
+    column-gap: 0;
+  }
+}
 
-    }
-  
-    @media screen and (min-width: $breakpoint-lg) {
+.footer-left {
+  display: flex;
+  column-gap: 14px;
+  padding-top: 5px;
+}
 
-    }
-  
-    @media screen and (min-width: $breakpoint-xl) {
+.footer-descr {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
 
-    }
-  
-    @media screen and (min-width: $breakpoint-xxl) { 
+  @media screen and (max-width: 575.9px) {
+    max-width: 180px;
+  }
 
-    } */
+  @media screen and (min-width: $breakpoint-sm) {
+    width: 200px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    width: 220px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 240px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    max-width: 250px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) { 
+    width: 301px;
+  }
+}
+
+.footer-right {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 125% */
+}
