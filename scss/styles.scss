@@ -332,7 +332,7 @@ h1 {
 .left-text {
   font-style: normal;
   line-height: 35px; /* 140% */
-  margin-bottom: 50px;
+  
 
   @media screen and (max-width: 575.9px) {
     text-align: center;
@@ -353,7 +353,9 @@ h1 {
   }
 
   @media screen and (min-width: $breakpoint-lg) {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 50px;
     text-align: start;
     font-size: 20px;
     width: 425px;
