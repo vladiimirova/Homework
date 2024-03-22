@@ -1989,7 +1989,7 @@ h1 {
     font-size: 24px;
   }
 
-  @media screen and (min-width: $breakpoint-xxl) { 
+  @media screen and (min-width: $breakpoint-xxl) {
     width: 539px;
     font-size: 25px;
   }
@@ -2015,6 +2015,101 @@ h1 {
 
 .see-btn:hover {
   background-color: $salmon;
+  transform: translateY(-2px);
+}
+
+/* Easy page */
+.easy {
+  background-color: $salmon;
+  padding-top: 119px;
+  padding-bottom: 161px;
+  text-align: center;
+}
+
+.easy h2 {
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 75px; /* 115.385% */
+  margin-bottom: 29px;
+
+  @media screen and (max-width: 575.9px) {
+    font-size: 60px;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    width: 518px;
+    font-size: 61px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    width: 720px;
+    font-size: 62px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    width: 740px;
+    font-size: 63px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    width: 750px;
+    font-size: 64px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) {
+    width: 784px;
+    font-size: 65px;
+  }
+}
+
+.easy p {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+  margin-bottom: 54px;
+
+  @media screen and (max-width: 575.9px) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: $breakpoint-sm) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: $breakpoint-md) {
+    font-size: 17px;
+  }
+
+  @media screen and (min-width: $breakpoint-lg) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $breakpoint-xl) {
+    font-size: 19px;
+  }
+
+  @media screen and (min-width: $breakpoint-xxl) { 
+    font-size: 20px;
+  }
+}
+
+.try-btn {
+  width: 160px;
+  height: 60px;
+  background-color: $primaryTextColor;
+  border: none;
+  color: $white;
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 352.941% */
+  transition: 0.2s linear all;
+}
+
+.try-btn:hover {
+  background-color: $orange;
   transform: translateY(-2px);
 }
 
