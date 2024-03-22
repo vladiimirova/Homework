@@ -185,6 +185,7 @@ button.button-menu svg {
   display: flex;
 }
 .show-menu.slide-menu .mobile-wrapper {
+  z-index: 1;
   transform: translateX(0);
 }
 
