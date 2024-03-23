@@ -2722,8 +2722,8 @@ h1 {
 /* Footer */
 @media screen and (max-width: 767.9px) {
   .footer {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -2750,12 +2750,10 @@ h1 {
   }
 }
 
-.footer-left {
-  column-gap: 14px;
-  padding-top: 5px;
-}
 @media screen and (min-width: 768px) {
   .footer-left {
+    column-gap: 14px;
+    padding-top: 5px;
     display: flex;
   }
 }
